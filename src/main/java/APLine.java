@@ -1,5 +1,16 @@
 public class APLine
 {
-  /* your code here */
-  
+  private int a, b, c;
+  public APLine(int aN, int bN, int cN){
+  a=aN;
+  b=bN;
+  c=cN;
+  }
+  public double getSlope(){
+    return (double) -a/b;
+  }
+
+  public boolean IsOnLine(int x, int y){
+    return a*x + b*y + c;
+  }
 }
